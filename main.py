@@ -248,7 +248,7 @@ def crawl_web(seed):
 			graph[page]=outlinks
 			union(tocrawl, outlinks)
 			crawled.append(page)
-			return index, graph
+	return index, graph
 
 def compute_ranks(graph):
 	d=0.8
